@@ -9,6 +9,6 @@ The program takes input from the user, stores mood entries, and gives a summary 
 - Calculates mood summary
 - Future updates: Save to file, View stats
 - Counts and displays how many times each mood was entered
-
+- Displays each mood with corresponding day number
 
 Made with 💛 by Aishmeen
