@@ -8,5 +8,7 @@ The program takes input from the user, stores mood entries, and gives a summary 
 - Stores up to 100 entries
 - Calculates mood summary
 - Future updates: Save to file, View stats
+- Counts and displays how many times each mood was entered
+
 
 Made with 💛 by Aishmeen
