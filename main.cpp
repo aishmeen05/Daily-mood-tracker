@@ -9,10 +9,17 @@ int main() {
 
     int happyCount = 0, sadCount = 0, angryCount = 0, excitedCount = 0;
 
-    cout << "Welcome to Daily Mood Tracker!" << endl;
-    cout << "Type your mood for today (happy/sad/angry/excited)." << endl;
-    cout << "Type 'exit' to finish and see summary.\n\n";
+    // Header
+    cout << "==============================" << endl;
+    cout << "     DAILY MOOD TRACKER 😊" << endl;
+    cout << "==============================\n" << endl;
 
+    cout << "Enter your mood for each day!" << endl;
+    cout << "(Type 'exit' to finish)\n" << endl;
+
+    cout << "------------------------------" << endl;
+
+    // Input loop
     while (true) {
         cout << "Enter mood for day " << count + 1 << ": ";
         cin >> mood;
@@ -23,7 +30,7 @@ int main() {
 
         moods[count] = mood;
 
-        // Mood counting logic
+        // Mood count logic
         if (mood == "happy") happyCount++;
         else if (mood == "sad") sadCount++;
         else if (mood == "angry") angryCount++;
@@ -32,20 +39,22 @@ int main() {
         count++;
     }
 
+    cout << "------------------------------\n";
+
+    // Summary
     cout << "\nYou entered moods for " << count << " days.\n";
 
-    // Final Mood Summary
-    cout << "\nMood Summary:\n";
-    cout << "Happy: " << happyCount << endl;
-    cout << "Sad: " << sadCount << endl;
-    cout << "Angry: " << angryCount << endl;
-    cout << "Excited: " << excitedCount << endl;
+    cout << "\n========= Mood Summary ========\n";
+    cout << "Happy   : " << happyCount << endl;
+    cout << "Sad     : " << sadCount << endl;
+    cout << "Angry   : " << angryCount << endl;
+    cout << "Excited : " << excitedCount << endl;
 
-    cout << "\nMood Log:\n";
+    // Log
+    cout << "\n========= Mood Log ============\n";
     for (int i = 0; i < count; i++) {
         cout << "Day " << i + 1 << " - " << moods[i] << endl;
     }
-
 
     return 0;
 }

@@ -10,5 +10,7 @@ The program takes input from the user, stores mood entries, and gives a summary 
 - Future updates: Save to file, View stats
 - Counts and displays how many times each mood was entered
 - Displays each mood with corresponding day number
+- Beautifully formatted mood tracker output with summary and logs
+
 
 Made with 💛 by Aishmeen
