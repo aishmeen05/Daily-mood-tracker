@@ -41,5 +41,11 @@ int main() {
     cout << "Angry: " << angryCount << endl;
     cout << "Excited: " << excitedCount << endl;
 
+    cout << "\nMood Log:\n";
+    for (int i = 0; i < count; i++) {
+        cout << "Day " << i + 1 << " - " << moods[i] << endl;
+    }
+
+
     return 0;
 }
