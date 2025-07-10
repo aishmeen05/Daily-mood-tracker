@@ -3,12 +3,14 @@
 using namespace std;
 
 int main() {
-    string moods[100]; // to store up to 100 moods
+    string moods[100];
     int count = 0;
     string mood;
 
+    int happyCount = 0, sadCount = 0, angryCount = 0, excitedCount = 0;
+
     cout << "Welcome to Daily Mood Tracker!" << endl;
-    cout << "Type your mood for today (happy/sad/angry/etc)." << endl;
+    cout << "Type your mood for today (happy/sad/angry/excited)." << endl;
     cout << "Type 'exit' to finish and see summary.\n\n";
 
     while (true) {
@@ -20,11 +22,24 @@ int main() {
         }
 
         moods[count] = mood;
+
+        // Mood counting logic
+        if (mood == "happy") happyCount++;
+        else if (mood == "sad") sadCount++;
+        else if (mood == "angry") angryCount++;
+        else if (mood == "excited") excitedCount++;
+
         count++;
     }
 
-    // Mood input complete
-    cout << "\nThank you! You entered moods for " << count << " days.\n";
+    cout << "\nYou entered moods for " << count << " days.\n";
+
+    // Final Mood Summary
+    cout << "\nMood Summary:\n";
+    cout << "Happy: " << happyCount << endl;
+    cout << "Sad: " << sadCount << endl;
+    cout << "Angry: " << angryCount << endl;
+    cout << "Excited: " << excitedCount << endl;
 
     return 0;
 }
